@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import photo from './assets/photo.jpeg'
-
+import photo from './assets/images/photo.jpeg';
+import breweryTours from './assets/images/breweryTours.jpeg';
+import Greengrocers from './assets/images/Greengrocers.jpeg';
+import CohortManager from './assets/images/CohortManager.jpeg';
 import './App.css'
 import Contact from './components/Contact'
 
@@ -21,6 +23,7 @@ function App() {
     </div>
   
   <div className='main' id='about'>
+
       <div className='hero'> 
        <div className='hero-text'>
         <h1 className='hero-message'>HI! I'M LOREDANA BENZAR, </h1>
@@ -37,15 +40,15 @@ function App() {
        <h1 className='work-title'>here is some of my work</h1>
        <div className='projects'>
          <div className='project-1'>
-         <a href="https://github.com/LAVINIABENZAR/js-dom-brewery-tours-challenge" className='brewery-link'> <img src="src/assets/Brewery-Tours.jpeg" alt="brewery locations" className='brewery-tours'/> </a>
+         <a href="https://github.com/LAVINIABENZAR/js-dom-brewery-tours-challenge" className='brewery-link'> <img src={breweryTours} alt="brewery locations" className='brewery-tours'/> </a>
          <p>Brewery Tours</p>
          </div>
          <div className='project-2'>
-          <a href="https://github.com/LAVINIABENZAR/react-greengrocers"><img src="src/assets/Greengrocers.jpeg" alt="products" className='brewery-tours'/></a>
+          <a href="https://github.com/LAVINIABENZAR/react-greengrocers"><img src={Greengrocers} alt="products" className='brewery-tours'/></a>
           <p>Greens Shop</p>
          </div>
          <div className='project-3'>
-          <a href="http://localhost:5174/"><img src="src/assets/Cohort Manager.jpeg" alt="" className='brewery-tours' /></a>
+          <a href="http://localhost:5174/"><img src={CohortManager} alt="" className='brewery-tours' /></a>
           <p>Cohort Manager App</p>
          </div>
        </div>

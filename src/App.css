@@ -166,7 +166,6 @@ a:hover {
 
 .main {
    grid-area: main; 
-   background-image: url(src/assets/black-sand.jpg);
    background-repeat: no-repeat;
    background-size: cover;
   background-position: center center ;
