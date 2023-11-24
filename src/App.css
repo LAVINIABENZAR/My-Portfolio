@@ -29,6 +29,10 @@
   }
 }
 
+.logo:hover {
+  transition: 1s;
+}
+
 .hero-message-2 {
   animation-name: slideInLeft;
   animation-duration: 1s;
@@ -79,6 +83,7 @@ a {
 a:hover {
   color: grey;
   font-size: larger;
+  transition: 0.5s;
 }
 
 .about {
@@ -104,30 +109,30 @@ a:hover {
 .project-1 {
   grid-area: project-1;
   border: solid rgb(149, 107, 107);
-  background-color: rgba(0, 0, 0, 0.408) ;
+  background-color: rgba(0, 0, 0, 0) ;
+  box-shadow: 0px 0px 20px white;
 }
-
-
 
 .brewery-tours {
   height: 250px;
   width: 250px;
-  box-shadow: 10px 10px 10px rgb(255, 249, 249);
+  box-shadow: 1px 1px 10px rgb(255, 249, 249);
   padding-top: 10px;
 
 }
 
-
 .project-2 {
   grid-area: project-2;
   border: solid rgb(150, 117, 117);
-  background-color: rgba(0, 0, 0, 0.408)
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 20px white;
 }
 
 .project-3 {
   grid-area: project-3;
   border: solid rgb(157, 114, 114);
-  background-color: rgba(0, 0, 0, 0.408);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 20px white;
 }
 
 .work-title {
@@ -138,7 +143,6 @@ a:hover {
   font-size: 3em;
   text-transform: uppercase;
 }
-
 
 .skills {
   grid-area: skills;
@@ -199,12 +203,14 @@ a:hover {
 }
 
 .skills-title {
-  font-size: x-large;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
   border: solid rgb(159, 134, 134);
+  color: rgba(255, 255, 255, 0.784);
   padding: 15px;
   margin: 15px;
   margin-top: 50px;
-  background-color:rgba(0, 0, 0, 0.489);
+  background-color:rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 10px white;
 }
 
@@ -245,16 +251,32 @@ a:hover {
 
 .html:hover {
   color: red;
+  transition: 0.5s;
 }
 
 .css:hover {
    color: rgb(41, 85, 109);
+   transition: 0.5s;
 }
 
 .react:hover {
   color: rgb(0, 42, 255);
+  transition: 0.5s;
 }
 
 .javascript:hover {
   color: yellow;
+  transition: 0.5s;
+}
+
+.api:hover {
+  color: brown;
+  transition: 0.5s;
+}
+
+.project-name {
+  padding-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }

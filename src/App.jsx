@@ -29,7 +29,7 @@ function App() {
         <h1 className='hero-message'>HI! I'M LOREDANA BENZAR, </h1>
         <h1 className='hero-message'>A WEB DEVELOPER</h1>
         <br />
-        <h1 className='hero-message-2'>I'm also a Boolean student at the moment</h1>
+        <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>
 
        </div>
       <img src={photo} alt="self portrait" className='hero-image'/>
@@ -41,15 +41,15 @@ function App() {
        <div className='projects'>
          <div className='project-1'>
          <a href="https://github.com/LAVINIABENZAR/js-dom-brewery-tours-challenge" className='brewery-link'> <img src={breweryTours} alt="brewery locations" className='brewery-tours'/> </a>
-         <p>Brewery Tours</p>
+         <p className='project-name'>Brewery Tours</p>
          </div>
          <div className='project-2'>
           <a href="https://github.com/LAVINIABENZAR/react-greengrocers"><img src={Greengrocers} alt="products" className='brewery-tours'/></a>
-          <p>Greens Shop</p>
+          <p className='project-name'>Greens Shop</p>
          </div>
          <div className='project-3'>
           <a href="http://localhost:5174/"><img src={CohortManager} alt="" className='brewery-tours' /></a>
-          <p>Cohort Manager App</p>
+          <p className='project-name'>Cohort Manager App</p>
          </div>
        </div>
       </div>
