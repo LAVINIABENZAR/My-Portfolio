@@ -166,11 +166,9 @@ a:hover {
 
 .main {
    grid-area: main;
-   background: linear-gradient(black, grey, white, black);
+   background: linear-gradient( black, grey, white, black);
   scroll-behavior: smooth;
   color: aliceblue;
-
-  
 }
 
 .hero {
