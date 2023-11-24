@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo   logo   logo"
+    "header header header"
+    "main main main"
+    "main main main"
+    "section section section"
+    "footer footer footer";
+    
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateY(10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.hero-message-2 {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+}
+
+.logo {
+  grid-area: logo;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+
+.header > ul{  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "about my-work  skills contact";
+  grid-area: header;
+  background-color:rgb(166, 205, 166) ;
+  background-image: url(src/assets/descărcare.jpg);
+  background-blend-mode: darken;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: lightgrey;
+}
+
+a:hover {
+  color: grey;
+  font-size: larger;
+}
+
+.about {
+   grid-area: about; 
+   scroll-behavior: smooth;
+   color: aliceblue;
+}
+
+.my-work {
+   grid-area: my-work;
+   scroll-behavior: smooth;
+   color: aliceblue;
+}
+
+.projects {
+  display: grid;
+  grid-template: 
+  "project-1  project-2  project-3";
+  text-align: center;
+  gap: 10px;
+}
+
+.project-1 {
+  grid-area: project-1;
+  border: solid black;
+  background-color: rgba(0, 0, 0, 0.408) ;
+}
+
+
+
+.brewery-tours {
+  height: 250px;
+  width: 250px;
+  box-shadow: 10px 5px 5px rgb(57, 56, 56);
+  padding-top: 10px;
+
+}
+
+
+.project-2 {
+  grid-area: project-2;
+  border: solid black;
+  background-color: rgba(0, 0, 0, 0.408)
+}
+
+.project-3 {
+  grid-area: project-3;
+  border: solid black;
+  background-color: rgba(0, 0, 0, 0.408);
+}
+
+.work-title {
+  text-align: center;
+  padding: 2em;
+  margin-top: 100px;
+  font-style: italic;
+  font-size: 3em;
+  transform: translateX(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.work-title::before {
+  content: attr(data-text);
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  line-height: 0.90em;
+  background: linear-gradient(0deg, #fff 0, transparent 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.skills {
+  grid-area: skills;
+  color: aliceblue;
+  text-align: center;
+}
+
+.hero-message {
+  font-size: 60px;
+}
+
+.list-item {
+  padding: 10px;
+  font-size: larger;
+}
+
+.contact {
+   grid-area: contact;
+   text-align: center; 
+   scroll-behavior: smooth;
+   color: aliceblue;
+}
+
+.main {
+   grid-area: main; 
+   background-image: url(src/assets/black-sand.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+  background-position: center center ;
+  scroll-behavior: smooth;
+  color: aliceblue;
+  
+}
+
+.hero {
+  display: grid;
+  grid-template: 
+  "hero-text  hero-image";
+}
+
+.hero-image {
+  margin-top: 5em;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0);
+  
+}
+
+.hero-message-2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero-text {
+  grid-area: hero-text;
+  align-self: center;
+  text-align: center;
+}
+
+.section {
+  grid-area: section;
+  scroll-behavior: smooth;
+
+}
+
+.skills-title {
+  font-size: x-large;
+  border: solid black;
+  padding: 15px;
+  margin: 15px;
+  margin-top: 50px;
+  background-color:rgba(0, 0, 0, 0.489);
+}
+
+.footer {
+   grid-area: footer; 
+   background-color: rgb(0, 0, 0);
+   scroll-behavior: smooth;
+}
+
+.socials {
+  display: grid;
+  grid-template-areas: 
+  "email  linkedin  github";
+  text-align: center;
+}
+
+.email {
+  grid-area: email;
+  color: aliceblue;
+  padding: 50px;
+}
+
+.linkedin {
+  grid-area: linkedin;
+  color: aliceblue;
+  padding: 50px;
+}
+
+.github {
+  grid-area: github;
+  color: aliceblue;
+  padding: 50px;
+}
+
+.list {
+  padding-bottom: 5em;
+}
+
+.html:hover {
+  color: red;
+}
+
+.css:hover {
+   color: rgb(41, 85, 109);
+}
+
+.react:hover {
+  color: rgb(0, 42, 255);
+}
+
+.javascript:hover {
+  color: yellow;
+}
