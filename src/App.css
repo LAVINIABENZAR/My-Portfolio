@@ -165,12 +165,11 @@ a:hover {
 }
 
 .main {
-   grid-area: main; 
-   background-repeat: no-repeat;
-   background-size: cover;
-  background-position: center center ;
+   grid-area: main;
+   background: linear-gradient(black, grey, white, black);
   scroll-behavior: smooth;
   color: aliceblue;
+
   
 }
 
