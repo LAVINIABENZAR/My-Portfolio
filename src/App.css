@@ -138,18 +138,7 @@ a:hover {
   margin-top: 100px;
   font-style: italic;
   font-size: 3em;
-  transform: translateX(-50%, -50%);
   text-transform: uppercase;
-}
-
-.work-title::before {
-  content: attr(data-text);
-  transform-origin: bottom;
-  transform: rotateX(180deg);
-  line-height: 0.90em;
-  background: linear-gradient(0deg, #fff 0, transparent 100%);
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 

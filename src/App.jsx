@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import photo from './assets/photo.jpeg'
 
 import './App.css'
 import Contact from './components/Contact'
@@ -28,12 +29,12 @@ function App() {
         <h1 className='hero-message-2'>I'm also a Boolean student at the moment</h1>
 
        </div>
-      <img src="src/assets/my-photo-2.jpeg" alt="" className='hero-image'/>
+      <img src={photo} alt="self portrait" className='hero-image'/>
       </div>
  
       <br />
       <div className='section work-section' id='mywork'>
-       <h1 className='work-title' data-text="here is some of my work"></h1>
+       <h1 className='work-title'>here is some of my work</h1>
        <div className='projects'>
          <div className='project-1'>
          <a href="https://github.com/LAVINIABENZAR/js-dom-brewery-tours-challenge" className='brewery-link'> <img src="src/assets/Brewery-Tours.jpeg" alt="brewery locations" className='brewery-tours'/> </a>
