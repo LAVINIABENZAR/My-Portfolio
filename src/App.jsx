@@ -26,7 +26,7 @@ function App() {
 
       <div className='hero'> 
        <div className='hero-text'>
-        <h1 className='hero-message'>HI! I'M LOREDANA BENZAR, </h1>
+        <h1 className='hero-message hero-message-1'>HI! I'M LOREDANA BENZAR, </h1>
         <h1 className='hero-message'>A WEB DEVELOPER</h1>
         <br />
         <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>

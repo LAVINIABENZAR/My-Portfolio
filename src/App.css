@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 
@@ -76,7 +77,6 @@ img {
 
 a {
   text-decoration: none;
-  scroll-behavior: smooth;
   color: lightgrey;
 }
 
@@ -88,13 +88,11 @@ a:hover {
 
 .about {
    grid-area: about; 
-   scroll-behavior: smooth;
    color: aliceblue;
 }
 
 .my-work {
    grid-area: my-work;
-   scroll-behavior: smooth;
    color: aliceblue;
 }
 
@@ -162,14 +160,12 @@ a:hover {
 .contact {
    grid-area: contact;
    text-align: center; 
-   scroll-behavior: smooth;
    color: aliceblue;
 }
 
 .main {
    grid-area: main;
    background: linear-gradient( rgb(118, 77, 77), rgb(175, 149, 169), rgb(171, 113, 113),  rgb(120, 85, 102), black);
-  scroll-behavior: smooth;
   color: aliceblue;
 }
 
@@ -198,8 +194,6 @@ a:hover {
 
 .section {
   grid-area: section;
-  scroll-behavior: smooth;
-
 }
 
 .skills-title {
@@ -217,7 +211,6 @@ a:hover {
 .footer {
    grid-area: footer; 
    background-color: rgb(0, 0, 0);
-   scroll-behavior: smooth;
 }
 
 .socials {
@@ -279,4 +272,28 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 3px;
+}
+
+@media screen and (max-width:900px)  {
+  .projects {
+    display: grid;
+    grid-template: 
+    "project-1"
+    "project-2"
+    "project-3";
+  }
+
+  .hero-message-1 {
+    padding-top: 1.5em;
+  }
+
+  .hero-message {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .hero-image {
+    display: none;
+  }
 }
