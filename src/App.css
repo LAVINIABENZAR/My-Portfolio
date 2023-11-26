@@ -165,7 +165,7 @@ a:hover {
 
 .main {
    grid-area: main;
-   background: linear-gradient( rgb(118, 77, 77), rgb(175, 149, 169), rgb(171, 113, 113),  rgb(120, 85, 102), black);
+   background: linear-gradient(black, rgb(118, 77, 77), rgb(95, 66, 66), rgb(171, 113, 113),  rgb(120, 85, 102), black);
   color: aliceblue;
 }
 
@@ -295,5 +295,9 @@ a:hover {
 @media screen and (max-width:600px) {
   .hero-image {
     display: none;
+  }
+  
+  .email, .github, .linkedin {
+    padding: 40px;
   }
 }
