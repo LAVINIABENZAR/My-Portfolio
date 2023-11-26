@@ -32,7 +32,7 @@ function App() {
         <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>
 
        </div>
-      <img src={photo} alt="self portrait" className='hero-image'/>
+       <img src={photo} alt="self portrait" className='hero-image'/>
       </div>
  
       <br />
@@ -48,7 +48,7 @@ function App() {
           <p className='project-name'>Greens Shop</p>
          </div>
          <div className='project-3'>
-          <a href="http://localhost:5174/"><img src={CohortManager} alt="" className='brewery-tours' /></a>
+          <a href="https://github.com/LAVINIABENZAR/react-cohort-dashboard-challenge"><img src={CohortManager} alt="" className='brewery-tours' /></a>
           <p className='project-name'>Cohort Manager App</p>
          </div>
        </div>
