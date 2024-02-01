@@ -61,7 +61,8 @@ function App() {
         <li className='list-item css'>CSS</li>
         <li className='list-item javascript'>JavaScript</li>
         <li className='list-item react'>React</li>
-        <li className='list-item api'>API's</li>
+        <li className='list-item api'>APIs</li>
+        <li className='list-item '>GIT</li>
       </ul>
       </div> 
      
