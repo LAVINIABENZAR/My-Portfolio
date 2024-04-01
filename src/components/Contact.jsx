@@ -12,7 +12,7 @@ function Contact() {
       <footer className='footer' id='contact'>
     <div className='socials'>
      <p className='email'><Email/> <a href="mailto:loredanabenzar2@gmail.com">EMAIL</a></p>
-     <p className='linkedin'><Linkedin/> <a href="https://www.linkedin.com/in/benzar-loredana-80b238201/">LINKEDIN</a></p>
+     <p className='linkedin'><Linkedin/> <a href="https://www.linkedin.com/in/loredana-benzar/">LINKEDIN</a></p>
      <p className='github'> <GitHub/> <a href="https://github.com/LAVINIABENZAR">GITHUB</a></p>
     </div>
    </footer>
