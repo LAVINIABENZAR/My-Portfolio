@@ -5,7 +5,8 @@
 }
 
 
-.container {  display: grid;
+.container {  
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -170,8 +171,9 @@ a:hover {
 
 .main {
    grid-area: main;
-   background: linear-gradient(black, rgb(195, 138, 138), rgb(109, 72, 72), rgb(194, 153, 153),  rgb(211, 147, 178), black);
+   /* background: linear-gradient(black, rgb(195, 138, 138), rgb(109, 72, 72), rgb(194, 153, 153),  rgb(211, 147, 178), black); */
   color: aliceblue;
+  background-image: url(src/assets/images/background.jpg);
 }
 
 .hero {
@@ -230,6 +232,10 @@ a:hover {
   grid-area: email;
   color: aliceblue;
   padding: 50px;
+}
+
+.email::after {
+  transition: 0.6;
 }
 
 .linkedin {

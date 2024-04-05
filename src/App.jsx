@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import photo from './assets/images/photo.jpeg';
 import breweryTours from './assets/images/breweryTours.jpeg';
 import Greengrocers from './assets/images/Greengrocers.jpeg';
