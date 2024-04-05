@@ -173,7 +173,7 @@ a:hover {
    grid-area: main;
    /* background: linear-gradient(black, rgb(195, 138, 138), rgb(109, 72, 72), rgb(194, 153, 153),  rgb(211, 147, 178), black); */
   color: aliceblue;
-  background-image: url(src/assets/images/background.jpg);
+  background-image: url(/src/assets/images/background.jpg);
 }
 
 .hero {
