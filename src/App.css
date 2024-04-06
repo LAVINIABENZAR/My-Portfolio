@@ -58,6 +58,7 @@
   letter-spacing: 4px;
 }
 
+
 @keyframes slideInLeft {
   from {
     transform: translateY(10px);
@@ -171,7 +172,7 @@ a:hover {
   letter-spacing: 6px;
   font-size: 60px;
   font-family: 'Shoogie';
-  font-weight: 500;
+  font-weight: 300;
   animation: hero-message 1s ease-in-out infinite alternate;
 }
 
