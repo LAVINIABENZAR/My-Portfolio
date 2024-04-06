@@ -1,24 +1,48 @@
 * {
   margin: 0;
   padding: 0;
+  background-image: url(/src/assets/images/background.jpg);
   scroll-behavior: smooth;
 }
 
 
-.container {  
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "logo   logo   logo"
     "header header header"
     "main main main"
     "main main main"
     "section section section"
     "footer footer footer";
-    
+
+}
+
+.navbar {
+  display: grid;
+  grid-template:
+    "logo  header";
+  padding-top: 25px;
+  position: sticky;
+  top: 0;
+  opacity: 90%;
+}
+
+.logo {
+  grid-area: logo;
+  padding-left: 45px;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  font-size: larger;
+  padding-right: 25px;
 }
 
 @keyframes slideInLeft {
@@ -46,30 +70,6 @@
 
 }
 
-.logo {
-  grid-area: logo;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  position: sticky;
-  top: 0;
-}
-
-
-.header > ul{  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "about my-work  skills contact";
-  grid-area: header;
-  background-color:rgb(0, 0, 0) ;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  list-style: none;
-}
 
 img {
   margin-left: auto;
@@ -88,19 +88,19 @@ a:hover {
 }
 
 .about {
-   grid-area: about; 
-   color: aliceblue;
+  grid-area: about;
+  color: aliceblue;
 }
 
 .my-work {
-   grid-area: my-work;
-   color: aliceblue;
+  grid-area: my-work;
+  color: aliceblue;
 }
 
 .projects {
   display: grid;
-  grid-template: 
-  "project-1  project-2  project-3";
+  grid-template:
+    "project-1  project-2  project-3";
   text-align: center;
   gap: 10px;
 }
@@ -108,7 +108,7 @@ a:hover {
 .project-1 {
   grid-area: project-1;
   border: solid rgb(149, 107, 107);
-  background-color: rgba(0, 0, 0, 0) ;
+  background-color: rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
@@ -153,8 +153,11 @@ a:hover {
 }
 
 .hero-message {
+  line-height: 90px;
+  letter-spacing: 6px;
   font-size: 60px;
-  text-shadow: 0px 0px 5px  rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  font-family: 'Vast-Shadow';
 }
 
 .list-item {
@@ -164,33 +167,46 @@ a:hover {
 }
 
 .contact {
-   grid-area: contact;
-   text-align: center; 
-   color: aliceblue;
+  grid-area: contact;
+  text-align: center;
+  color: aliceblue;
 }
 
 .main {
-   grid-area: main;
-   /* background: linear-gradient(black, rgb(195, 138, 138), rgb(109, 72, 72), rgb(194, 153, 153),  rgb(211, 147, 178), black); */
+  grid-area: main;
+  /* background: linear-gradient(black, rgb(195, 138, 138), rgb(109, 72, 72), rgb(194, 153, 153),  rgb(211, 147, 178), black); */
   color: aliceblue;
-  background-image: url(/src/assets/images/background.jpg);
+
+}
+
+.first::first-letter {
+  display: inline-block;
+  font-size: 90px;
+  color: rgb(219, 172, 172);
+  font-family: 'Vast-Shadow';
+  font-weight: 900;
+}
+
+.comma {
+  color: rgb(178, 142, 142);
 }
 
 .hero {
   display: grid;
-  grid-template: 
-  "hero-text  hero-image";
+  grid-template:
+    "hero-text  hero-image";
 }
 
 .hero-image {
   margin-top: 5em;
-  box-shadow: 5px 5px 40px  rgb(255, 255, 255);
+  box-shadow: 5px 5px 40px rgb(255, 255, 255);
   border-radius: 40%;
-  
+  opacity: 70%;
 }
 
 .hero-message-2 {
   font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -212,19 +228,19 @@ a:hover {
   padding: 15px;
   margin: 15px;
   margin-top: 50px;
-  background-color:rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 .footer {
-   grid-area: footer; 
-   background-color: rgb(0, 0, 0);
+  grid-area: footer;
+  background-color: rgb(0, 0, 0);
 }
 
 .socials {
   display: grid;
-  grid-template-areas: 
-  "email  linkedin  github";
+  grid-template-areas:
+    "email  linkedin  github";
   text-align: center;
 }
 
@@ -260,8 +276,8 @@ a:hover {
 }
 
 .css:hover {
-   color: rgb(41, 85, 109);
-   transition: 0.5s;
+  color: rgb(41, 85, 109);
+  transition: 0.5s;
 }
 
 .react:hover {
@@ -286,13 +302,13 @@ a:hover {
   word-spacing: 3px;
 }
 
-@media screen and (max-width:900px)  {
+@media screen and (max-width:900px) {
   .projects {
     display: grid;
-    grid-template: 
-    "project-1"
-    "project-2"
-    "project-3";
+    grid-template:
+      "project-1"
+      "project-2"
+      "project-3";
   }
 
   .hero-message-1 {
@@ -308,8 +324,10 @@ a:hover {
   .hero-image {
     display: none;
   }
-  
-  .email, .github, .linkedin {
+
+  .email,
+  .github,
+  .linkedin {
     padding: 40px;
   }
 }

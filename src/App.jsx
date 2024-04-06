@@ -4,28 +4,31 @@ import Greengrocers from './assets/images/Greengrocers.jpeg';
 import CohortManager from './assets/images/CohortManager.jpeg';
 import './App.css'
 import Contact from './components/Contact'
+import './fonts.css'
 
 function App() {
   
 
   return (
   <div className='app'>
+    <div className='navbar'>
     <div className='logo' ><a href="#home"><h1>~ 𝓛𝓑 ~</h1></a></div>
-    <div className='header' id='home'>
-      <ul className='header'>
+    <div className='header' >
+      <ul className='header'> 
       <a href="#about"><li className='about'>ABOUT ME</li></a>
       <a href="#mywork"> <li className='my-work'>MY WORK</li></a>
       <a href="#skills"><li className='skills'>SKILLS</li></a>
       <a href="#contact"><li className='contact'>CONTACT</li></a>
       </ul>
-     
     </div>
-  
+    </div>
+ 
   <div className='main' id='about'>
 
       <div className='hero'> 
        <div className='hero-text'>
-        <h1 className='hero-message hero-message-1'>HI! I'M LOREDANA BENZAR, </h1>
+        <h1 className='hero-message hero-message-1'> <p>HI!</p>
+         I'M <span className='first' style={{display: 'inline-block'}}>LOREDANA</span> <span className='first' style={{display: 'inline-block'}}>BENZAR</span> <span className='comma'>,</span> </h1>
         <h1 className='hero-message'>A WEB DEVELOPER</h1>
         <br />
         <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>
