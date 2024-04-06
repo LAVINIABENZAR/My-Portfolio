@@ -12,11 +12,11 @@ function App() {
   return (
   <div className='app'>
     <div className='navbar'>
-    <div className='logo' ><a href="#home"><h1>~ 𝓛𝓑 ~</h1></a></div>
+    <div className='logo' ><a href="#home"><h1>~ <span  className='logo-text'>LB</span> ~</h1></a></div>
     <div className='header' >
       <ul className='header'> 
-      <a href="#about"><li className='about'>ABOUT ME</li></a>
-      <a href="#mywork"> <li className='my-work'>MY WORK</li></a>
+      <a href="#about"><li className='about'>ABOUT</li></a>
+      <a href="#mywork"> <li className='my-work'>PROJECTS</li></a>
       <a href="#skills"><li className='skills'>SKILLS</li></a>
       <a href="#contact"><li className='contact'>CONTACT</li></a>
       </ul>
@@ -27,7 +27,7 @@ function App() {
 
       <div className='hero'> 
        <div className='hero-text'>
-        <h1 className='hero-message hero-message-1'> <p>HI!</p>
+        <h1 className='hero-message hero-message-1'> <p>HI,</p>
          I'M <span className='first' style={{display: 'inline-block'}}>LOREDANA</span> <span className='first' style={{display: 'inline-block'}}>BENZAR</span> <span className='comma'>,</span> </h1>
         <h1 className='hero-message'>A WEB DEVELOPER</h1>
         <br />

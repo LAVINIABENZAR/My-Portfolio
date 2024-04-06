@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background-image: url(/src/assets/images/background.jpg);
+  background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
@@ -28,12 +29,21 @@
   padding-top: 25px;
   position: sticky;
   top: 0;
-  opacity: 90%;
+  width: 100%;
+
 }
 
 .logo {
   grid-area: logo;
   padding-left: 45px;
+  font-size: larger;
+  font-family: 'Playfair';
+  letter-spacing: 4px;
+}
+
+.logo-text {
+  color: rgb(248, 236, 236);
+  font-weight: 300;
 }
 
 .header {
@@ -43,6 +53,9 @@
   list-style: none;
   font-size: larger;
   padding-right: 25px;
+  font-family: 'Shoogie';
+  font-weight: 600;
+  letter-spacing: 4px;
 }
 
 @keyframes slideInLeft {
@@ -55,9 +68,7 @@
   }
 }
 
-.logo:hover {
-  transition: 1s;
-}
+
 
 .hero-message-2 {
   animation-name: slideInLeft;
@@ -67,6 +78,8 @@
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
+  letter-spacing: 3px;
+  color: rgb(235, 181, 199);
 
 }
 
@@ -153,12 +166,15 @@ a:hover {
 }
 
 .hero-message {
+  text-shadow: 2px 4px 6px rgb(222, 133, 133);
   line-height: 90px;
   letter-spacing: 6px;
   font-size: 60px;
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
-  font-family: 'Vast-Shadow';
+  font-family: 'Shoogie';
+  font-weight: 500;
+  animation: hero-message 1s ease-in-out infinite alternate;
 }
+
 
 .list-item {
   padding: 10px;
@@ -183,8 +199,8 @@ a:hover {
   display: inline-block;
   font-size: 90px;
   color: rgb(219, 172, 172);
-  font-family: 'Vast-Shadow';
-  font-weight: 900;
+  font-family: 'Playfair';
+  font-weight: 500;
 }
 
 .comma {
@@ -205,8 +221,8 @@ a:hover {
 }
 
 .hero-message-2 {
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: 'Montserrat';
+ 
 }
 
 
