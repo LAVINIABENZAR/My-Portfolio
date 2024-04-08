@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import photo from './assets/images/photo.jpeg';
 import breweryTours from './assets/images/breweryTours.jpeg';
 import Greengrocers from './assets/images/Greengrocers.jpeg';
@@ -5,16 +6,19 @@ import CohortManager from './assets/images/CohortManager.jpeg';
 import './App.css'
 import Contact from './components/Contact'
 import './fonts.css'
+import Preloader from './components/Preloader';
+
+
 
 function App() {
-  
-
   return (
+    <>
+    <Preloader/>
   <div className='app'>
     <div className='navbar'>
-    <div className='logo' ><a href="#home"><h1>~ <span  className='logo-text'>LB</span> ~</h1></a></div>
+    <div className='logo' ><a href="#home"><h1>&lt;<span  className='logo-text'>LORE</span>/&gt;</h1></a></div>
     <div className='header' >
-      <ul className='header'> 
+    <ul className='header'> 
       <a href="#about"><li className='about'>ABOUT</li></a>
       <a href="#mywork"> <li className='my-work'>PROJECTS</li></a>
       <a href="#skills"><li className='skills'>SKILLS</li></a>
@@ -41,15 +45,15 @@ function App() {
       <div className='section work-section' id='mywork'>
        <h1 className='work-title'>here is some of my work</h1>
        <div className='projects'>
-         <div className='project-1'>
+         <div className='project-1 container right content'>
          <a href="https://github.com/LAVINIABENZAR/js-dom-brewery-tours-challenge" className='brewery-link'> <img src={breweryTours} alt="brewery locations" className='brewery-tours'/> </a>
          <p className='project-name'>Brewery Tours</p>
          </div>
-         <div className='project-2'>
+         <div className='project-2 container left content'>
           <a href="https://github.com/LAVINIABENZAR/react-greengrocers"><img src={Greengrocers} alt="products" className='brewery-tours'/></a>
           <p className='project-name'>Greens Shop</p>
          </div>
-         <div className='project-3'>
+         <div className='project-3 container right content'>
           <a href="https://github.com/LAVINIABENZAR/react-cohort-dashboard-challenge"><img src={CohortManager} alt="" className='brewery-tours' /></a>
           <p className='project-name'>Cohort Manager App</p>
          </div>
@@ -75,7 +79,7 @@ function App() {
     </div>
    
   </div>
-    
+  </>
 
    
   )
