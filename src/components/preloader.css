@@ -11,16 +11,29 @@
     align-items: center;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
   }
   
   .loader {
     font-size: 54px;
-    color: #faf3f3;
-    border-top: 8px solid #e9a8a8;
+    color: #fef8f8;
+    animation: spin 1s linear infinite;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #e5acac; 
+    border-radius: 50%;
   }
   
   .preloader.loaded {
     opacity: 0;
     pointer-events: none; 
   }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
   
+  .loaded .preloader {
+    display: none;
+  }
