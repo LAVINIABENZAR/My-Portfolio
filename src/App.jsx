@@ -3,6 +3,8 @@ import photo from './assets/images/photo.jpeg';
 import Greengrocers from './assets/images/Greengrocers.jpeg';
 import MealApp from './assets/images/MealApp.png'
 import Next from './assets/images/Next.png'
+import node from './assets/SVGs/node.svg'
+import prisma from './assets/SVGs/prisma.svg'
 import './App.css'
 import Contact from './components/Contact'
 import './fonts.css'
@@ -58,7 +60,7 @@ function App() {
                       <p align="center">
                       <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50" /> </a>
                        <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src={Next} alt="nextjs" width="60" height="50" /></a> 
-                       <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src="/src/assets/SVGs/prisma.svg" alt="Prisma" width="50" height="50" /></a>
+                       <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} alt="Prisma" width="50" height="50" /></a>
                        <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="50" height="50" /> </a> 
                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50" /> </a> </p>
                     </div>
@@ -92,7 +94,7 @@ function App() {
           <div className='skills' id='skills'>
           <div className='tech-stack'><span className='skills-title'>Tech Stack</span>
                       <p align="center">
-                       <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src="/src/assets/SVGs/prisma.svg" alt="Prisma" /></a>
+                       <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} alt="Prisma" /></a>
                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="70" height="70" /> </a>
                        <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="70" height="70" /> </a> 
                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="70" /> </a> 
@@ -100,7 +102,7 @@ function App() {
                        <a href="https://jasmine.github.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="70" height="70" /> </a> 
                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70" /> </a> 
                        <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src={Next} alt="nextjs" width="80" height="70" /></a> 
-                       <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="/src/assets/SVGs/node.svg" alt="nodejs" width="70" height="70" /> </a> 
+                       <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src={node} alt="nodejs" width="70" height="70" /> </a> 
                        <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="70" height="70" /> </a> 
                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70" /> </a> </p>
                     </div>
