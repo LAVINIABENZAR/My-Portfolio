@@ -6,6 +6,16 @@
   scroll-behavior: smooth;
 }
 
+.express {
+  color: rgb(254, 253, 254);
+  font-family: 'Queenfair';
+  font-size: large;
+  letter-spacing: 2px;
+  margin-bottom: -100px;
+  position: relative;
+  bottom: 25px;
+  padding: 3px;
+}
 
 .container {
   display: grid;
@@ -274,7 +284,12 @@ a:hover {
 }
 
 .tech-stack { 
-  margin: 5%;
+  margin: 8%;
+  padding: 5px;
+}
+
+.svgs {
+  padding: 55px;
 }
 
 .skills-title{
