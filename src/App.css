@@ -17,9 +17,7 @@
     "header header header"
     "main main main"
     "main main main"
-    /* "section section section" */
     "footer footer footer";
-
 }
 
 .navbar {
@@ -118,7 +116,6 @@ a:hover {
 }
 
 
-
 /* projects section */
 
 .project-title {
@@ -136,15 +133,14 @@ a:hover {
 
 .projects {
   display: flex;
-  justify-content: space-between; /* Distribute projects evenly across container */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .project {
-  width: 45%; /* Set width for each project */
-  padding: 20px; /* Add padding around each project */
-  /* border: 1px solid #ddd; Add border for styling (optional) */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  width: 45%; 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
 
 .container {
@@ -161,62 +157,27 @@ a:hover {
   text-align: start;
 }
 
-/* ray of light */
-
-.light-ray-container {
-  position: relative;
-  overflow: hidden;
-  width: 500px; /* Adjust width as needed */
-  height: 500px; /* Adjust height as needed */
-  background-color: #f4f4f4; /* Background color of the container */
-}
-
-.light-ray-container::before,
-.light-ray-container::after {
-  content: '';
-  position: absolute;
-
-  width: 1200px;
-  height: 100%;
-}
-
-/* Ray of light effect using radial gradient */
-.light-ray-container::before {
-  background: radial-gradient( rgba(255, 255, 255, 0.8) 10%, transparent 70%);
-  transform: translate(10%, -50%);
-  z-index: 1;
-}
-
-/* Optional: Add additional rays for more depth */
-.light-ray-container::after {
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
-  transform: translate(-50%, -50%) rotate(15deg);
-  z-index: 2;
-}
-
-/* ray of light */
 
 .container.left {
-  justify-content: flex-end; /* Right-align content within left container */
+  justify-content: flex-end; 
   margin-left: -5px;
 }
 
 .container.right {
-  justify-content: flex-start; /* Left-align content within right container */
+  justify-content: flex-start; 
 }
 
 .project-details {
-  margin-left: 20px; /* Add margin between image and text */
+  margin-left: 20px; 
 }
 
 .project-details li {
   list-style: none;
 }
 
-/* Media query for responsiveness (adjust as needed) */
 @media (max-width: 768px) {
   .project {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%; 
   }
 }
 
