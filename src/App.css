@@ -17,7 +17,7 @@
     "header header header"
     "main main main"
     "main main main"
-    "section section section"
+    /* "section section section" */
     "footer footer footer";
 
 }
@@ -96,8 +96,7 @@ a {
 }
 
 a:hover {
-  color: grey;
-  font-size: larger;
+  text-decoration: underline solid palevioletred;
   transition: 0.5s;
 }
 
@@ -111,45 +110,118 @@ a:hover {
   color: aliceblue;
 }
 
-.projects {
-  display: grid;
-  grid-template:
-    "project-1  project-2  project-3";
-  text-align: center;
-  gap: 10px;
-}
-
-.project-1 {
-  grid-area: project-1;
-  border: solid rgb(149, 107, 107);
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
-}
-
 .brewery-tours {
-  width: 250px;
-  height: 260px;
-  padding-top: 10px;
+  width: 220px;
+  height: 150px;
+  margin: 5px;
+  border: solid 15px rgb(252, 249, 249) ;
 }
 
-.brewery-tours:hover {
-  box-shadow: 2px 2px 12px rgb(255, 249, 249);
 
+
+/* projects section */
+
+.project-title {
+  font-family: 'Shoogie';
+  letter-spacing: 2px;
+  font-size: 30px;
 }
 
-.project-2 {
-  grid-area: project-2;
-  border: solid rgb(150, 117, 117);
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+.subtitle {
+  font-size: larger;
+  font-family: 'Playfair';
+  color: rgb(241, 203, 216);
+  margin-top: 17px;
 }
 
-.project-3 {
-  grid-area: project-3;
-  border: solid rgb(157, 114, 114);
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+.projects {
+  display: flex;
+  justify-content: space-between; /* Distribute projects evenly across container */
+  align-items: center; /* Center items vertically */
 }
+
+.project {
+  width: 45%; /* Set width for each project */
+  padding: 20px; /* Add padding around each project */
+  /* border: 1px solid #ddd; Add border for styling (optional) */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.first-project {
+  text-align: end;
+  padding-right: 7px;
+}
+
+.second-project {
+  text-align: start;
+}
+
+/* ray of light */
+
+.light-ray-container {
+  position: relative;
+  overflow: hidden;
+  width: 500px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  background-color: #f4f4f4; /* Background color of the container */
+}
+
+.light-ray-container::before,
+.light-ray-container::after {
+  content: '';
+  position: absolute;
+
+  width: 1200px;
+  height: 100%;
+}
+
+/* Ray of light effect using radial gradient */
+.light-ray-container::before {
+  background: radial-gradient( rgba(255, 255, 255, 0.8) 10%, transparent 70%);
+  transform: translate(10%, -50%);
+  z-index: 1;
+}
+
+/* Optional: Add additional rays for more depth */
+.light-ray-container::after {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
+  transform: translate(-50%, -50%) rotate(15deg);
+  z-index: 2;
+}
+
+/* ray of light */
+
+.container.left {
+  justify-content: flex-end; /* Right-align content within left container */
+  margin-left: -5px;
+}
+
+.container.right {
+  justify-content: flex-start; /* Left-align content within right container */
+}
+
+.project-details {
+  margin-left: 20px; /* Add margin between image and text */
+}
+
+.project-details li {
+  list-style: none;
+}
+
+/* Media query for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+  .project {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* end of projects section */
+
 
 .work-title {
   text-align: center;
@@ -166,13 +238,17 @@ a:hover {
   text-align: center;
 }
 
+.header .active {
+  color: blue;
+}
+
 .hero-message {
   text-shadow: 2px 4px 6px rgb(222, 133, 133);
   line-height: 90px;
   letter-spacing: 6px;
   font-size: 60px;
   font-family: 'Shoogie';
-  font-weight: 300;
+  font-weight: 500;
   animation: hero-message 1s ease-in-out infinite alternate;
 }
 
@@ -191,7 +267,6 @@ a:hover {
 
 .main {
   grid-area: main;
-  /* background: linear-gradient(black, rgb(195, 138, 138), rgb(109, 72, 72), rgb(194, 153, 153),  rgb(211, 147, 178), black); */
   color: aliceblue;
 
 }
@@ -237,13 +312,17 @@ a:hover {
   grid-area: section;
 }
 
-.skills-title {
+.tech-stack { 
+  margin: 5%;
+}
+
+.skills-title{
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   border: solid rgb(44, 40, 40);
   color: rgba(255, 255, 255, 0.784);
   padding: 15px;
-  margin: 15px;
+  margin: 45px;
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
@@ -287,37 +366,7 @@ a:hover {
   padding-bottom: 5em;
 }
 
-.html:hover {
-  color: red;
-  transition: 0.5s;
-}
 
-.css:hover {
-  color: rgb(41, 85, 109);
-  transition: 0.5s;
-}
-
-.react:hover {
-  color: rgb(0, 42, 255);
-  transition: 0.5s;
-}
-
-.javascript:hover {
-  color: yellow;
-  transition: 0.5s;
-}
-
-.api:hover {
-  color: brown;
-  transition: 0.5s;
-}
-
-.project-name {
-  padding-top: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-}
 
 @media screen and (max-width:900px) {
   .projects {
