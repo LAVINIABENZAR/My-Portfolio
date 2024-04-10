@@ -4,10 +4,10 @@ import Next from './assets/images/Next.png'
 import node from './assets/SVGs/node.svg'
 import prisma from './assets/SVGs/prisma.svg'
 import './App.css'
-import Contact from './components/Contact'
+import Contact from './components/Contact.jsx'
 import './fonts.css'
-import Preloader from './components/Preloader';
-import Projects from './components/projects';
+import Preloader from './components/Preloader.jsx';
+import MyWork from './components/MyWork.jsx';
 
 
 
@@ -47,7 +47,7 @@ function App() {
 
           <br />
           <div id='mywork'>
-         <Projects/>
+    <MyWork/>
 
           </div>
          

@@ -4,7 +4,7 @@ import Next from '../assets/images/Next.png'
 import prisma from '../assets/SVGs/prisma.svg'
 import Cohort from '../assets/images/Cohort.png'
 
-function Projects() {
+function MyWork() {
     return (
         <>
        
@@ -51,4 +51,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default MyWork
