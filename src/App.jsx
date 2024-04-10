@@ -1,7 +1,5 @@
 
 import photo from './assets/images/photo.jpeg';
-import Greengrocers from './assets/images/Greengrocers.jpeg';
-import MealApp from './assets/images/MealApp.png'
 import Next from './assets/images/Next.png'
 import node from './assets/SVGs/node.svg'
 import prisma from './assets/SVGs/prisma.svg'
@@ -10,6 +8,7 @@ import Contact from './components/Contact'
 import './fonts.css'
 import Preloader from './components/Preloader';
 import Projects from './components/projects';
+
 
 
 
@@ -47,7 +46,7 @@ function App() {
 
           <br />
           <div id='mywork'>
-          <Projects/>
+        <Projects/>
 
           </div>
          
