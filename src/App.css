@@ -103,10 +103,6 @@ a {
   color: lightgrey;
 }
 
-a:hover {
-  text-decoration: underline solid palevioletred;
-  transition: 0.5s;
-}
 
 .about {
   grid-area: about;
