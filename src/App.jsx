@@ -9,6 +9,8 @@ import './App.css'
 import Contact from './components/Contact'
 import './fonts.css'
 import Preloader from './components/Preloader';
+import Projects from './components/projects';
+
 
 
 
@@ -44,78 +46,38 @@ function App() {
           </div>
 
           <br />
-          <div className='section work-section' id='mywork'>
-            <h1 className='work-title'>here is some of my work</h1>
-            <div className='projects'>
-              <div className='project project-1'>
-                <div className='container left content'>
-                  <div className='project-details first-project'>
-                    <h2><span className='project-title'>Meal Planner App</span></h2>
-                    <ul> <span className='subtitle'>Features:</span>
-                      <li>Authentication</li>
-                      <li>Meal Management</li>
-                      <li>Cooking Time Notifications</li>
-                    </ul>
-                    <div ><span className='subtitle'>Technologies Used:</span>
-                      <p align="center">
-                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50" /> </a>
-                       <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src={Next} alt="nextjs" width="60" height="50" /></a> 
-                       <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} alt="Prisma" width="50" height="50" /></a>
-                       <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="50" height="50" /> </a> 
-                       <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50" /> </a> </p>
-                    </div>
-
-                  </div>
-                  <a href="https://be-on-thyme-pi.vercel.app/myprofile" className='brewery-link'>
-                    <img src={MealApp} alt="brewery locations" className='brewery-tours' />
-                  </a>
-                </div>
-              </div>
-
-              <div className='project project-2'>
-                <div className='container right content'>
-                  <a href="https://github.com/LAVINIABENZAR/react-greengrocers">
-                    <img src={Greengrocers} alt="products" className='brewery-tours' />
-                  </a>
-                  <div className='project-details second-project'>
-                    <h2><span className='project-title'>Greens Shop</span></h2>
-                    <ul>
-                      <li>Feature 1</li>
-                      <li>Feature 2</li>
-                      <li>Feature 3</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div id='mywork'>
+          <Projects/>
 
           </div>
+         
           <br />
           <div className='skills' id='skills'>
-          <div className='tech-stack'><span className='skills-title'>Tech Stack</span>
-                      <p align="center" className='svgs'>
-                       <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} alt="Prisma" /></a>
-                       <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="70" height="70" /> </a>
-                       <a href="https://expressjs.com" target="_blank" rel="noreferrer"><span  className='express'>express</span></a> 
-                       <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="70" /> </a> 
-                       <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="70" height="70" /> </a> 
-                       <a href="https://jasmine.github.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="70" height="70" /> </a> 
-                       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70" /> </a> 
-                       <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src={Next} alt="nextjs" width="96" height="70" /></a> 
-                       <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src={node} alt="nodejs" width="70" height="70" /> </a> 
-                       <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="70" height="70" /> </a> 
-                       <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70" /> </a> </p>
-                    </div>
+            <div className='tech-stack'><span className='skills-title'>Tech Stack</span>
+              <p align="center" className='svgs'>
+                <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} alt="Prisma" /></a>
+                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="70" height="70" /> </a>
+                <a href="https://expressjs.com" target="_blank" rel="noreferrer"><span className='express'>express</span></a>
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="70" /> </a>
+                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="70" height="70" /> </a>
+                <a href="https://jasmine.github.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="70" height="70" /> </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70" /> </a>
+                <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src={Next} alt="nextjs" width="96" height="70" /></a>
+                <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src={node} alt="nodejs" width="70" height="70" /> </a>
+                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="70" height="70" /> </a>
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70" /> </a> </p>
+            </div>
 
           </div>
 
         </div>
+
         <div>
-          <p>test</p>
           <Contact />
         </div>
 
       </div>
+
     </>
 
 
