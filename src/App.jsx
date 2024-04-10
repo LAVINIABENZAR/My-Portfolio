@@ -13,6 +13,7 @@ import Projects from './components/projects';
 
 
 
+
 function App() {
   return (
     <>
@@ -46,7 +47,7 @@ function App() {
 
           <br />
           <div id='mywork'>
-        <Projects/>
+         <Projects/>
 
           </div>
          
