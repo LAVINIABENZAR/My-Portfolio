@@ -15,19 +15,19 @@ const Menu = () => {
     return (
       <div>
         <button className="menu-icon" onClick={toggleMenu}>
-          &#9776; Menu
+          &#9776;
         </button>
   
   
         {isOpen && (
           <div className="overlay" onClick={closeMenu}>
             <div className="overlay-content">
-              <a href="#about" onClick={closeMenu}>About</a>
-              <a href="#mywork" onClick={closeMenu}>Projects</a>
-              <a href="#skills" onClick={closeMenu}>Skills</a>
-              <a href="#contact" onClick={closeMenu}>Contact</a>
+              <a href="#about">About</a>
+              <a href="#mywork">Projects</a>
+              <a href="#skills">Skills</a>
+              <a href="#contact">Contact</a>
             </div>
-            <span className="closebtn" onClick={closeMenu}>&times;</span>
+            <span className="closebtn" onClick={closeMenu}>x</span>
           </div>
         )}
       </div>

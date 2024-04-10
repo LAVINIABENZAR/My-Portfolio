@@ -12,7 +12,7 @@ function MyWork() {
             <img src={MealApp} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Meal Planner App</p>
-                <button><a href="https://be-on-thyme-pi.vercel.app/myprofile"><span className='button-text'>Visit</span></a></button>
+                <button className='button'><a href="https://be-on-thyme-pi.vercel.app/myprofile"><span className='button-text'>Visit</span></a></button>
                 <span className='features-text'>Features:</span>
                 <ul className='features-list'>
                     <li>Authentication</li>
@@ -33,7 +33,7 @@ function MyWork() {
             <img src={Cohort} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Cohort Manager App</p>
-                <button><a href="https://github.com/LAVINIABENZAR/react-cohort-dashboard-challenge"><span className='button-text'>Visit</span></a></button>
+                <button className='button'><a href="https://github.com/LAVINIABENZAR/react-cohort-dashboard-challenge"><span className='button-text'>See on GitHub</span></a></button>
                 <span className='features-text'>The User is Able To:</span>
                 <ul className='features-list'>
                     <li>Create Posts</li>

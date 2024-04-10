@@ -24,13 +24,9 @@ function App() {
         <div className='navbar'>
           <div className='logo' ><a href="#home"><h1>&lt;<span className='logo-text'>LORE</span>/&gt;</h1></a></div>
           <div className='header' >
-            <ul className='header'>
-              {/* <a href="#about"><li className='about'>ABOUT</li></a>
-              <a href="#mywork"> <li className='my-work'>PROJECTS</li></a>
-              <a href="#skills"><li className='skills'>SKILLS</li></a>
-              <a href="#contact"><li className='contact'>CONTACT</li></a> */}
+           
               <Menu/>
-            </ul>
+    
           </div>
         </div>
 

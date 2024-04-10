@@ -55,15 +55,26 @@
 }
 
 .header {
+  padding-right: 30px;
   grid-area: header;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  justify-content: end;
   list-style: none;
+  display: grid;
   font-size: larger;
-  padding-right: 25px;
-  font-family: 'Shoogie';
-  font-weight: 600;
-  letter-spacing: 4px;
+  grid-template-columns: auto ;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    padding-left: 130px;
+    grid-area: header;
+    justify-content: end;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto ;
+  }
+
+
 }
 
 
@@ -175,11 +186,7 @@ a {
   list-style: none;
 }
 
-@media (max-width: 768px) {
-  .project {
-    width: 100%; 
-  }
-}
+
 
 /* end of projects section */
 
@@ -344,8 +351,30 @@ a {
     padding-top: 1.5em;
   }
 
+  .logo-text {
+    font-size: 30px;
+
+  }
+
+  .hero-message-2 {
+    padding-left: 40px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .first::first-letter {
+    display: inline-block;
+    font-size: 50px;
+    color: rgb(219, 172, 172);
+    font-family: 'Playfair';
+    font-weight: 200;
+  }
+
   .hero-message {
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 600;
+    padding-left: 40px;
+    line-height: 2em;
   }
 }
 
