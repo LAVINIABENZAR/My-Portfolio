@@ -88,7 +88,7 @@
   animation-direction: normal;
   animation-fill-mode: none;
   letter-spacing: 3px;
-  color: rgb(235, 181, 199);
+  color:rgb(219, 172, 172);
 
 }
 
@@ -207,10 +207,6 @@ a:hover {
   grid-area: skills;
   color: aliceblue;
   text-align: center;
-}
-
-.header .active {
-  color: blue;
 }
 
 .hero-message {

@@ -15,7 +15,7 @@ const Preloader = () => {
 
   return (
     <div className={`preloader ${loaded ? 'loaded' : ''}`}>
-      <h1 className="loader">&lt;<span  className='logo-text'>LORE</span>/&gt;</h1>
+      <h1 className="loader">&lt;<span  className='loader-text'>LORE</span>/&gt;</h1>
     </div>
   );
 };
