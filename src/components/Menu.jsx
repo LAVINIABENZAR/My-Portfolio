@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './menu.css'
-
+import menu from '../assets/SVGs/menu.svg'
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
   
@@ -14,9 +14,9 @@ const Menu = () => {
   
     return (
       <div>
-        <button className="menu-icon" onClick={toggleMenu}>
-          &#9776;
-        </button>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <img className='menu-icon' src={menu} style={{fill:"pink"}} alt="menu icon" />
+        </div>
   
   
         {isOpen && (

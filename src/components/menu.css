@@ -9,6 +9,8 @@
     align-items: center;
   z-index: 10000;
   background: rgb(0, 0, 0);
+
+
   }
 
 
@@ -22,10 +24,16 @@
   .overlay-content {
     text-align: center;
     background: rgb(0, 0, 0);
+    font-family: "Queensides";
   }
 
   .overlay-content a {
     background: rgb(0, 0, 0);
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: rgb(236, 164, 200);
+    font-size: larger;
   }
   
   .overlay a {
@@ -42,7 +50,7 @@
     text-shadow: 6px 0px 4px white;
     right: 60px;
     font-size: 60px;
-    color: rgb(244, 175, 232);
+    color: #f4afe8;
     cursor: pointer;
     font-family: 'Queensides';
     background: rgb(0, 0, 0);
