@@ -9,7 +9,7 @@ import './fonts.css'
 import Preloader from './components/Preloader.jsx';
 import MyWork from './components/MyWork.jsx';
 import Menu from './components/Menu.jsx';
-
+import express from './assets/SVGs/express.svg'
 
 
 
@@ -56,7 +56,7 @@ function App() {
               <p align="center" className='svgs'>
                 <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} alt="Prisma" /></a>
                 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="70" height="70" /> </a>
-                <a href="https://expressjs.com" target="_blank" rel="noreferrer"><span className='express'>express</span></a>
+                <a href="https://expressjs.com" target="_blank" rel="noreferrer"><img src={express} alt="express" /></a>
                 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="70" /> </a>
                 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="70" height="70" /> </a>
                 <a href="https://jasmine.github.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="70" height="70" /> </a>
