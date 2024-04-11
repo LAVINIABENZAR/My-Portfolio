@@ -7,8 +7,8 @@ import Cohort from '../assets/images/Cohort.png'
 function MyWork() {
     return (
         <>
-       
-        <main className="card">
+        <div className='main-title'>Here is some of my work</div>
+        <main className="card"> 
             <img src={MealApp} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Meal Planner App</p>
@@ -21,11 +21,11 @@ function MyWork() {
                 </ul>
                 <div className='technologies'><span className='text price technologies'>Technologies Used:</span>
                     <p className='technologies' align="center">
-                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /> </a>
-                        <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src={Next} className='technologies' alt="nextjs" width="56" height="40" /></a>
-                        <a href="https://www.prisma.io/" target='_blank' rel='noreffer'> <img src={prisma} className='technologies' alt="Prisma" width="40" height="40" /></a>
-                        <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" /> </a>
-                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> </a> </p>
+                        <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
+                        <img src={Next} className='technologies' alt="nextjs" width="56" height="40" />
+                        <img src={prisma} className='technologies' alt="Prisma" width="40" height="40" />
+                         <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" /> 
+                       <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" />  </p>
                 </div>
             </div>
         </main>
@@ -42,8 +42,8 @@ function MyWork() {
                 </ul>
                 <div className='technologies'><span className='text price technologies'>Technologies Used:</span>
                     <p className='technologies' align="center">
-                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /> </a>
-                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> </a> </p>
+                         <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
+                       <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /></p>
                 </div>
             </div>
         </main>

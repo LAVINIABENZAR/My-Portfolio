@@ -12,8 +12,54 @@
     justify-content: center;
     color: hsl(0, 0%, 100%);
     transition: 0.2s ease-in-out;
-    margin-top: 150px;
+    margin-bottom: 150px;
   }
+
+  .main-title {
+    text-align: center;
+    font-family: 'Shoogie';
+    font-size: 3em;
+    margin-bottom: 70px;
+    margin-top: 110px;
+  }
+
+@media screen and (max-width: 850px){
+    .main-title {
+        text-align: center;
+        font-family: 'Shoogie';
+        font-size: 2em;
+        margin-bottom: 70px;
+        margin-top: 110px;
+      }
+
+      .card {
+        width: 90%;
+        background: #454040;
+        opacity: 90%;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: hsl(0, 0%, 100%);
+        transition: 0.2s ease-in-out;
+        margin-bottom: 150px;
+      }
+
+      .img {
+        object-fit: scale-down;
+        height: 12%;
+        min-width: 63%;
+        opacity: 30%;
+        padding: 20px;
+        transition: 0.2s ease-in-out;
+        z-index: 1;
+        border-radius: 3%;
+      } 
+}
+
   
   .img {
     object-fit: scale-down;

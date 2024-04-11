@@ -75,6 +75,21 @@
     grid-template-columns: auto ;
   }
 
+  .skills-title{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    border: solid rgb(44, 40, 40);
+    color: rgba(174, 6, 6, 0.784);
+    padding: 15px;
+    margin: 45px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
+
+  .tech-stack {
+    display: grid;
+  }
 
 }
 
@@ -358,7 +373,7 @@ a {
   }
 
   .hero-message-2 {
-    padding-left: 40px;
+    text-align: center;
     font-size: large;
     font-weight: bold;
   }
@@ -374,7 +389,7 @@ a {
   .hero-message {
     font-size: 2em;
     font-weight: 600;
-    padding-left: 40px;
+   text-align: center;
     line-height: 2em;
   }
 }
