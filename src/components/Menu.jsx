@@ -1,16 +1,38 @@
 import React, { useState } from 'react';
 import './menu.css'
 import menu from '../assets/SVGs/menu.svg'
+
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
   
-    const toggleMenu = () => {
-      setIsOpen(!isOpen); 
-    };
-  
-    const closeMenu = () => {
-      setIsOpen(false); 
-    };
+   
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    if (!isOpen) {
+      hideImages();
+    }
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    showAllContent();
+  };
+
+  const hideImages = () => {
+    const imagesToHide = document.querySelectorAll('img, main');
+    imagesToHide.forEach(image => {
+      image.style.display = 'none';
+    });
+  };
+
+
+  const showAllContent = () => {
+    const allContent = document.querySelectorAll('*');
+    allContent.forEach(element => {
+      element.style.display = ''; 
+    });
+  };
+    
   
     return (
       <div>

@@ -8,7 +8,7 @@ function MyWork() {
     return (
         <>
        
-        <div className="card">
+        <main className="card">
             <img src={MealApp} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Meal Planner App</p>
@@ -28,8 +28,8 @@ function MyWork() {
                         <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> </a> </p>
                 </div>
             </div>
-        </div>
-        <div className="card">
+        </main>
+        <main className="card">
             <img src={Cohort} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Cohort Manager App</p>
@@ -46,7 +46,7 @@ function MyWork() {
                         <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> </a> </p>
                 </div>
             </div>
-        </div>
+        </main>
         </>
     )
 }

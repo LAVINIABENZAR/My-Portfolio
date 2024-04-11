@@ -1,5 +1,6 @@
 .overlay {
     position: fixed;
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -7,10 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  z-index: 10000;
-  background: rgb(0, 0, 0);
-
-
+   background: rgb(0, 0, 0); 
   }
 
 
@@ -57,3 +55,4 @@
   }
   
   
+
