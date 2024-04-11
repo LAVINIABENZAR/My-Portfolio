@@ -13,26 +13,26 @@
     color: hsl(0, 0%, 100%);
     transition: 0.2s ease-in-out;
     margin-bottom: 150px;
-  }
+}
 
-  .main-title {
+.main-title {
     text-align: center;
     font-family: 'Shoogie';
     font-size: 3em;
     margin-bottom: 70px;
     margin-top: 110px;
-  }
+}
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
     .main-title {
         text-align: center;
         font-family: 'Shoogie';
         font-size: 2em;
         margin-bottom: 70px;
         margin-top: 110px;
-      }
+    }
 
-      .card {
+    .card {
         width: 90%;
         background: #454040;
         opacity: 90%;
@@ -46,9 +46,9 @@
         color: hsl(0, 0%, 100%);
         transition: 0.2s ease-in-out;
         margin-bottom: 150px;
-      }
+    }
 
-      .img {
+    .img {
         object-fit: scale-down;
         height: 12%;
         min-width: 63%;
@@ -57,11 +57,21 @@
         transition: 0.2s ease-in-out;
         z-index: 1;
         border-radius: 3%;
-      } 
+    }
+
+    .features-list li {
+        background: #454040;
+        list-style: none;
+        font-family: 'Queenside';
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-left: 5px;
+        font-size: small;
+    }
 }
 
-  
-  .img {
+
+.img {
     object-fit: scale-down;
     height: 47%;
     width: 23%;
@@ -70,9 +80,9 @@
     transition: 0.2s ease-in-out;
     z-index: 1;
     border-radius: 3%;
-  }
-  
-  .textBox {
+}
+
+.textBox {
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -83,85 +93,95 @@
     z-index: 2;
     border-radius: 10%;
     background: #454040;
-  }
-  
-  .textBox > .text {
+}
+
+.textBox>.text {
     font-weight: bold;
     padding: 20px;
     background: #454040;
-  }
-  
-  .textBox > .head {
+}
+
+.textBox>.head {
     font-size: 20px;
     background: #454040;
 
-  }
-  
-  .textBox > .price {
+}
+
+.textBox>.price {
     font-size: 17px;
     background: #454040;
-  }
-  
-  .textBox > span {
+}
+
+.textBox>span {
     font-size: 12px;
     color: lightgrey;
     background: #454040;
-  }
-  
-  .card:hover > .textBox {
+}
+
+.card:hover>.textBox {
     opacity: 1;
     background: #454040;
-  }
+}
 
-  .technologies {
+.technologies {
     background: #454040;
-  }
-  
-  .card:hover > .img {
+    font-family: 'Queensides';
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card:hover>.img {
     height: 75%;
     width: 35%;
     filter: brightness(70%);
     filter: blur(7px);
     animation: anim 3s infinite;
-  }
+}
 
-  .features-text {
+.features-text {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Queensides';
     background: #454040;
-  }
-  
-  .features-list {
-    background: #454040;
-  }
+}
 
-  .features-list li {
+.features-list {
+    background: #454040;
+}
+
+.features-list li {
     background: #454040;
     list-style: none;
-  }
+    font-family: 'Queenside';
+    letter-spacing: 2px;
+    padding-left: 5px;
+   
+}
 
-  @keyframes anim {
+@keyframes anim {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     50% {
-      transform: translateY(-30px);
+        transform: translateY(-30px);
     }
 
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  
-  .card:hover {
-    transform: scale(1.44) rotate(0deg );
+}
+
+.card:hover {
+    transform: scale(1.44) rotate(0deg);
     transition: 0.2s ease-in-out;
     height: 300px;
-  }
+}
 
 /* button */
 .button {
     background: rgb(219, 172, 172);
- 
+
 }
 
 .button-text {
@@ -170,21 +190,22 @@
     padding: 5px 15px 5px 15px;
     text-decoration: none;
     font-family: 'Montserrat';
-    
+
 }
 
 .button-text:hover {
-        background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
-        animation: slidernbw 5s linear infinite;
-        color: #000;
-       
+    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+    animation: slidernbw 5s linear infinite;
+    color: #000;
+
 }
 
 .button:hover {
     background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
     animation: slidernbw 5s linear infinite;
     color: #000;
-    transform: scale(0.9) rotate(5deg );
+    transform: scale(0.9) rotate(5deg);
     transition: 0.2s ease-in-out;
-   }
+}
+
 /*  button */
