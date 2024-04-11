@@ -115,7 +115,7 @@
   animation-direction: normal;
   animation-fill-mode: none;
   letter-spacing: 3px;
-  color:rgb(219, 172, 172);
+  color:#f4afe8;
 
 }
 
@@ -143,68 +143,6 @@ a {
 
 
 
-/* projects section */
-
-.project-title {
-  font-family: 'Shoogie';
-  letter-spacing: 2px;
-  font-size: 30px;
-}
-
-.subtitle {
-  font-size: larger;
-  font-family: 'Playfair';
-  color: rgb(241, 203, 216);
-  margin-top: 17px;
-}
-
-.projects {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-}
-
-.project {
-  width: 45%; 
-  padding: 20px; 
-  box-sizing: border-box; 
-}
-
-.container {
-  display: flex;
-  align-items: center;
-}
-
-.first-project {
-  text-align: end;
-  padding-right: 7px;
-}
-
-.second-project {
-  text-align: start;
-}
-
-
-.container.left {
-  justify-content: flex-end; 
-  margin-left: -5px;
-}
-
-.container.right {
-  justify-content: flex-start; 
-}
-
-.project-details {
-  margin-left: 20px; 
-}
-
-.project-details li {
-  list-style: none;
-}
-
-
-
-/* end of projects section */
 
 
 .work-title {
@@ -381,7 +319,7 @@ a {
   .first::first-letter {
     display: inline-block;
     font-size: 50px;
-    color: rgb(219, 172, 172);
+    color: #f4afe8;
     font-family: 'Playfair';
     font-weight: 200;
   }
