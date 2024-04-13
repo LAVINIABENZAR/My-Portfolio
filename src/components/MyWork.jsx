@@ -12,7 +12,7 @@ function MyWork() {
             <img src={MealApp} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Meal Planner App</p>
-                <button className='button'><a href="https://be-on-thyme-pi.vercel.app/myprofile"><span className='button-text'>Visit</span></a></button>
+                <button className='button'><a href="https://be-on-thyme-pi.vercel.app"><span className='button-text'>Visit</span></a></button>
                 <span className='features-text'>Features:</span>
                 <ul className='features-list'>
                     <li>Authentication</li>
