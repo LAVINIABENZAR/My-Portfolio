@@ -40,7 +40,6 @@ const Menu = () => {
           <img className='menu-icon' src={menu} style={{fill:"pink"}} alt="menu icon" />
         </div>
   
-  
         {isOpen && (
           <div className="overlay" onClick={closeMenu}>
             <div className="overlay-content">

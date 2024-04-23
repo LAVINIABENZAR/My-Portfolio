@@ -5,7 +5,6 @@ const Preloader = () => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-
     const timeout = setTimeout(() => {
       setLoaded(true);
     }, 1000);

@@ -1,4 +1,3 @@
-
 import photo from './assets/images/photo.jpeg';
 import Next from './assets/images/Next.png'
 import node from './assets/SVGs/node.svg'
@@ -12,11 +11,7 @@ import Menu from './components/Menu.jsx';
 import express from './assets/SVGs/express.svg'
 
 
-
-
-
 function App() {
-  
   return (
     <>
       <Preloader />
@@ -24,14 +19,10 @@ function App() {
         <div className='navbar'>
           <div className='logo' ><a href="#home"><h1>&lt;<span className='logo-text'>LORE</span>/&gt;</h1></a></div>
           <div className='header' >
-           
-              <Menu/>
-    
+            <Menu />
           </div>
         </div>
-
         <div className='main' id='about'>
-
           <div className='hero'>
             <div className='hero-text'>
               <h1 className='hero-message hero-message-1'> <p>HI,</p>
@@ -39,17 +30,13 @@ function App() {
               <h1 className='hero-message'>A WEB DEVELOPER</h1>
               <br />
               <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>
-
             </div>
             <img src={photo} alt="self portrait" className='hero-image' />
           </div>
-
           <br />
           <div id='mywork'>
-    <MyWork/>
-
+            <MyWork />
           </div>
-         
           <br />
           <div className='skills' id='skills'>
             <div className='tech-stack'><span className='skills-title'>Tech Stack</span>
@@ -66,20 +53,13 @@ function App() {
                 <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="70" height="70" /> </a>
                 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70" /> </a> </p>
             </div>
-
           </div>
-
         </div>
-
         <div>
           <Contact />
         </div>
-
       </div>
-
     </>
-
-
   )
 }
 

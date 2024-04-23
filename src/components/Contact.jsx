@@ -3,8 +3,6 @@ import Linkedin from "../assets/SVGs/Linkedin";
 import Email from "../assets/SVGs/Email";
 import GitHub from "../assets/SVGs/GitHub";
 
-
-
 function Contact() {
   return (
     <div>
