@@ -1,3 +1,4 @@
+import { useState } from "react";
 import '../App.css'
 import Linkedin from "../assets/SVGs/Linkedin";
 import Email from "../assets/SVGs/Email";
