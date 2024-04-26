@@ -192,7 +192,7 @@ a {
 .first::first-letter {
   display: inline-block;
   font-size: 90px;
-  color: rgb(219, 172, 172);
+  color:#f4afe8;
   font-family: 'Playfair';
   font-weight: 500;
 }

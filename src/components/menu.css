@@ -45,12 +45,12 @@
 
 .closebtn {
   position: absolute;
-  top: 15px;
-  text-shadow: 6px 0px 4px white;
-  right: 60px;
+  top: 8px;
+  right: 50px;
   font-size: 60px;
   color: #f4afe8;
   cursor: pointer;
   font-family: 'Queensides';
   background: rgb(0, 0, 0);
+  font-weight: bold;
 }
