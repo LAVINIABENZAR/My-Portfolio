@@ -3,11 +3,27 @@ import './projects.css'
 import Next from '../assets/images/Next.png'
 import prisma from '../assets/SVGs/prisma.svg'
 import Cohort from '../assets/images/Cohort.png'
+import blog from '../assets/images/blog.png'
 
 function MyWork() {
     return (
         <>
         <div className='main-title'>Here is some of my work</div>
+        <main className="card"> 
+            <img src={blog} className='img' alt="food" />
+            <div className="textBox">
+                <p className="text head">Food Blog</p>
+                <span className='features-text'>A place where you can get inspired with cooking by choosing the most delicious meals from the coolest movies</span>
+                <div className='technologies'><span className='text price technologies'>Technologies Used:</span>
+                    <p className='technologies' align="center">
+                        <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
+                        <img src={Next} className='technologies' alt="nextjs" width="56" height="40" />
+                        <img src={prisma} className='technologies' alt="Prisma" width="40" height="40" />
+                         <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" /> 
+                       <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" />  </p>
+                </div>
+            </div>
+        </main>
         <main className="card"> 
             <img src={MealApp} className='img' alt="food" />
             <div className="textBox">
