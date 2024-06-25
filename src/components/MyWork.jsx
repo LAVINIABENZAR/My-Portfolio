@@ -14,7 +14,7 @@ function MyWork() {
             <img src={blog} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Food Blog</p>
-                <span className='features-text'>A place where you can get inspired with cooking by choosing the most delicious meals from the coolest movies</span>
+                <span id='blog' className='features-text'>A place where you can get inspired with cooking by choosing the most delicious meals inspired from the coolest movies</span>
                 <div className='technologies'><span className='text price technologies'>Technologies Used:</span>
                     <p className='technologies' align="center">
                         <img src={Next} className='technologies' alt="nextjs" width="56" height="40" />
