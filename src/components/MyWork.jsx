@@ -17,10 +17,8 @@ function MyWork() {
                 <span className='features-text'>A place where you can get inspired with cooking by choosing the most delicious meals from the coolest movies</span>
                 <div className='technologies'><span className='text price technologies'>Technologies Used:</span>
                     <p className='technologies' align="center">
-                        <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
                         <img src={Next} className='technologies' alt="nextjs" width="56" height="40" />
                         <img src={tailwind} className='technologies' alt="Prisma" width="40" height="40" />
-                         <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" /> 
                        <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" />  </p>
                 </div>
             </div>
