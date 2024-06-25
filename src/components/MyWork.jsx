@@ -4,6 +4,7 @@ import Next from '../assets/images/Next.png'
 import prisma from '../assets/SVGs/prisma.svg'
 import Cohort from '../assets/images/Cohort.png'
 import blog from '../assets/images/blog.png'
+import tailwind from '../assets/SVGs/tailwind.svg'
 
 function MyWork() {
     return (
@@ -18,7 +19,7 @@ function MyWork() {
                     <p className='technologies' align="center">
                         <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
                         <img src={Next} className='technologies' alt="nextjs" width="56" height="40" />
-                        <img src={prisma} className='technologies' alt="Prisma" width="40" height="40" />
+                        <img src={tailwind} className='technologies' alt="Prisma" width="40" height="40" />
                          <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" /> 
                        <img className='technologies' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" />  </p>
                 </div>
