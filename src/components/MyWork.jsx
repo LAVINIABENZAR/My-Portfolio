@@ -15,7 +15,7 @@ function MyWork() {
             <img src={blog} className='img' alt="food" />
             <div className="textBox">
                 <p className="text head">Food Blog</p>
-                <span id='blog' className='features-text'>A place where you can find culinary inspiration by choosing the most delicious meals inspired by the coolest movies.</span>
+                <span id='blog' className='features-text'>A place where you can find culinary inspiration by choosing the most delicious meals inspired from the coolest movies.</span>
                 <div className='technologies'><span className='text price technologies'>Technologies Used:</span>
                     <p className='technologies' align="center">
                         <img src={typescript} className='technologies' alt="typescript" width="40" height="40" />
