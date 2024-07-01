@@ -19,7 +19,7 @@ function App() {
       <Preloader />
       <div className='app'>
         <div className='navbar'>
-          <div className='logo' ><a href="#home"><h1>&lt;<span className='logo-text'>LORE</span>/&gt;</h1></a></div>
+          <div className='logo' ><a href="#home">LOREDANA</a></div>
           <div className='header' >
             <Menu />
           </div>
