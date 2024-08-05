@@ -11,6 +11,7 @@ import Menu from './components/Menu.jsx';
 import express from './assets/SVGs/express.svg'
 import tailwind from './assets/SVGs/tailwind.svg'
 import typescript from './assets/SVGs/typescript.svg'
+import Resume from './components/Resume.jsx';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <h1 className='hero-message hm2'>SOFTWARE ENGINEER</h1>
               <br />
               <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>
+              <Resume/>
             </div>
             <img src={photo} alt="self portrait" className='hero-image'/>
           </div>
