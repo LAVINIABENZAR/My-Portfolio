@@ -28,12 +28,12 @@ function App() {
           <div className='hero'>
             <div className='hero-text'>
               <h1 className='hero-message hero-message-1'> <p>HI,</p>
-                I'M <span className='first' style={{ display: 'inline-block' }}>LOREDANA</span> <span className='first' style={{ display: 'inline-block' }}>BENZAR</span> <span className='comma'>,</span> </h1>
-              <h1 className='hero-message'>A WEB DEVELOPER</h1>
+                I'M <span className='first' style={{ display: 'inline-block' }}>LOREDANA</span> <span className='first' style={{ display: 'inline-block' }}>BENZAR,</span> <span className='comma'>,</span> </h1>
+              <h1 className='hero-message hm2'>SOFTWARE ENGINEER</h1>
               <br />
               <h1 className='hero-message-2'>LET'S GIVE YOUR IDEAS A SHAPE</h1>
             </div>
-            <img src={photo} alt="self portrait" className='hero-image' />
+            <img src={photo} alt="self portrait" className='hero-image'/>
           </div>
           <br />
           <div id='mywork'>
