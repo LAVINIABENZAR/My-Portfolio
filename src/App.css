@@ -161,6 +161,7 @@ a {
   text-align: center;
 }
 
+
 .hero-message {
   text-shadow: 2px 4px 6px rgb(222, 133, 133);
   line-height: 90px;
@@ -171,6 +172,9 @@ a {
   animation: hero-message 1s ease-in-out infinite alternate;
 }
 
+.hm2 {
+  font-weight: 800;
+}
 
 .list-item {
   padding: 10px;
