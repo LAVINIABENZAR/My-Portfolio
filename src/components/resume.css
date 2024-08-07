@@ -29,3 +29,37 @@
     box-shadow:  0 0.5em 1em 0.3em #fdaaaabe;
   }
   
+@media screen and (max-width:1000px ){
+    .cssbuttons-io-button {
+        margin-left: 14em;
+    }
+}
+
+@media screen and (max-width:1030px ){
+    .cssbuttons-io-button {
+        margin-left: 14em;
+    }
+}
+
+@media screen and (max-width:860px ){
+    .cssbuttons-io-button {
+        margin-left: 9em;
+    }
+}
+
+@media screen and (max-width:670px ){
+    .cssbuttons-io-button {
+        margin-left: 6em;
+    }
+}
+@media screen and (max-width:590px ){
+    .cssbuttons-io-button {
+        margin-left: 9em;
+    }
+}
+
+@media screen and (max-width:470px ){
+    .cssbuttons-io-button {
+        margin-left: 6em;
+    }
+}
